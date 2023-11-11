@@ -1,0 +1,3 @@
+/home/paul/CLionProjects/FinanceManager/cmake-build-debug/CMakeFiles/FinanceManager.dir
+/home/paul/CLionProjects/FinanceManager/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/paul/CLionProjects/FinanceManager/cmake-build-debug/CMakeFiles/rebuild_cache.dir
