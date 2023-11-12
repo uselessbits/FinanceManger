@@ -392,7 +392,7 @@ void saveDataToFile() {
     }
 
     for (int i = 0; i < numEntries; i++) {
-        fprintf(file, "%s,%s,%s,%s\n", transactionArray[i].date,
+        fprintf(file, "%s.%s.%s.%s\n", transactionArray[i].date,
                 transactionArray[i].amount, transactionArray[i].description,
                 transactionArray[i].type);
     }
@@ -410,7 +410,7 @@ void loadDataFromFile() {
     }
 
     numEntries=0;
-    while (fscanf(file, "%10s,%[^,],%[^,],%1s\n", transactionArray[numEntries].date,
+    while (fscanf(file, "%10s.%[^.].%[^.].%1s\n", transactionArray[numEntries].date,
                   transactionArray[numEntries].amount, &transactionArray[numEntries].description,
                   &transactionArray[numEntries].type) != EOF) {
         (numEntries)++;
